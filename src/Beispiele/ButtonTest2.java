@@ -12,8 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
-public class ButtonTest2 extends JFrame implements
-        ActionListener {
+public class ButtonTest2 extends JFrame implements ActionListener {
     private JCheckBox oval;
     private JRadioButton red;
     private JRadioButton yellow;
