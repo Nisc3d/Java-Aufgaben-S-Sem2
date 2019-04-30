@@ -25,8 +25,7 @@ public class ButtonTest1 extends JFrame implements
         c.setLayout(new FlowLayout());
 
         // Warum funktioniert die folgende Zeile meist nicht?
-        Icon icon = new
-                ImageIcon(getClass().getResource("cat.gif"));
+        Icon icon = new ImageIcon(getClass().getResource("cat.gif"));
         // Icon wird nicht gefunden!
         // Lösung: Verzeichnispfad mitgeben, „\\“ als Trennzeichen
         // oder:   Datei ins src-Verzeichnis des Projekts kopieren
