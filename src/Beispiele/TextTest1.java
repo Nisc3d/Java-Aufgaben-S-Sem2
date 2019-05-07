@@ -19,7 +19,7 @@ public class TextTest1 extends JFrame implements
     private JButton ok;
 
     public TextTest1() {
-        super("Textfelder");
+        super("Clipboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Container c = getContentPane();
         c.setLayout(new GridLayout(7, 1, 0, 0));

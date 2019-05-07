@@ -39,15 +39,16 @@ public class TableTest2
 
     private class MyTableModel extends AbstractTableModel {
         private String[] colNames =
-                { "Artikel", "Preis", "Menge", "Einzelsumme" };
+                {"Artikel", "Preis", "Menge", "Einzelsumme"};
 
-        private Object[][] data = { { "A4711", 100, 10, 1000 },
-                { "A4721", 80, 5, 400 }, { "A4731", 10, 20, 200 },
-                { "A4741", 12, 5, 60 }, { "A4751", 250, 4, 1000 } };
+        private Object[][] data = {{"A4711", 100, 10, 1000},
+                {"A4721", 80, 5, 400}, {"A4731", 10, 20, 200},
+                {"A4741", 12, 5, 60}, {"A4751", 250, 4, 1000}};
 
         public int getColumnCount() {
             return colNames.length;
         }
+
         public int getRowCount() {
             return data.length;
         }
