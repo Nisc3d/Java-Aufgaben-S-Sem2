@@ -32,16 +32,30 @@ public class Clipboard extends JFrame implements ActionListener {
         p.add(paste);
         add(p, BorderLayout.NORTH);
         text = new JTextArea(20,80);
-        add(text, BorderLayout.SOUTH);
+        text.setEditable(true);
+        text.setFont(new Font("Monospaced", Font.PLAIN, 14));
+        add(new JScrollPane(text), BorderLayout.CENTER);
         pack();
-        c.setVisible(true);
+        setVisible(true);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        Object obj = e.getSource();
+        if (obj == copy){
+            text.copy();
+        }
+        else if (obj == cut){
+            text.cut();
+        }
+        else if (obj == paste){
+            text.paste();
+        }
     }
 
     public static void main(String[] args) {
+        new Clipboard();
+        new Clipboard();
         new Clipboard();
     }
 }
